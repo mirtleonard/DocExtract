@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use Carp qw(croak);
+use Time::Piece ();
 
 use DocExtract::AlgoRecommender::Util qw(ability_to_mastery clamp);
 use DocExtract::AlgoRecommender::RatingService;
@@ -15,6 +16,9 @@ sub new {
         dbh                => $args{dbh},
         target_probability => $args{target_probability} // 0.72,
         candidate_limit    => $args{candidate_limit} // 200,
+        recent_attempt_cooldown_days => defined $args{recent_attempt_cooldown_days}
+            ? $args{recent_attempt_cooldown_days}
+            : 3,
         rating_service     => $args{rating_service} || DocExtract::AlgoRecommender::RatingService->new(),
     }, $class;
 
@@ -115,10 +119,11 @@ sub recommend_for_user {
     my $dbh = $self->{dbh} or croak 'dbh is required for recommend_for_user';
     my $user_id = $args{user_id} or croak 'user_id is required';
     my $limit = $args{limit} // 20;
+    my $as_of_time = $args{as_of_time};
 
     my $user_skills = $self->_load_user_skill_state($dbh, $user_id);
     my $global_bias = $self->_load_user_global_ability($dbh, $user_id);
-    my $problems = $self->_load_candidate_problems($dbh, $user_id);
+    my $problems = $self->_load_candidate_problems($dbh, $user_id, $as_of_time);
 
     my $ranked = $self->rank_candidates(
         problems    => $problems,
@@ -167,10 +172,26 @@ sub _load_user_global_ability {
 }
 
 sub _load_candidate_problems {
-    my ($self, $dbh, $user_id) = @_;
+    my ($self, $dbh, $user_id, $as_of_time) = @_;
+
+    my @bind = ($user_id);
+    my $cooldown_filter = q{};
+
+    if ($self->{recent_attempt_cooldown_days} > 0) {
+        my $cutoff = $self->_compute_attempt_cutoff($as_of_time);
+        $cooldown_filter = q{
+              and (
+                    ups.last_attempt_at is null
+                 or ups.last_attempt_at < ?
+              )
+        };
+        push @bind, $cutoff;
+    }
+
+    push @bind, $self->{candidate_limit};
 
     my $rows = $dbh->selectall_arrayref(
-        q{
+        qq{
             select
                 p.id as problem_id,
                 p.title,
@@ -182,16 +203,12 @@ sub _load_candidate_problems {
               on ups.problem_id = p.id
              and ups.user_id = ?
             where coalesce(ups.solved, false) = false
-              and (
-                    ups.last_attempt_at is null
-                 or ups.last_attempt_at < now() - interval '3 days'
-              )
+            $cooldown_filter
             order by prs.attempts desc, p.id asc
             limit ?
         },
         { Slice => {} },
-        $user_id,
-        $self->{candidate_limit},
+        @bind,
     );
 
     return [] if !@{$rows};
@@ -222,6 +239,19 @@ sub _load_candidate_problems {
     }
 
     return $rows;
+}
+
+sub _compute_attempt_cutoff {
+    my ($self, $as_of_time) = @_;
+
+    my $base_time = defined $as_of_time
+        ? Time::Piece->strptime($as_of_time, '%Y-%m-%dT%H:%M:%SZ')
+        : Time::Piece::gmtime();
+
+    my $cooldown_seconds = $self->{recent_attempt_cooldown_days} * 24 * 60 * 60;
+    my $cutoff = $base_time - $cooldown_seconds;
+
+    return $cutoff->strftime('%Y-%m-%dT%H:%M:%SZ');
 }
 
 1;

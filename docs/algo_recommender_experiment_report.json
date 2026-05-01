@@ -1,0 +1,2526 @@
+{
+   "generated_at" : "2026-05-01T11:10:26Z",
+   "persona_count" : 10,
+   "personas" : [
+      {
+         "after" : {
+            "global_ability" : "-0.8439",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.960866506862595,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 3,
+                  "recommendation_score" : 0.869197250225902,
+                  "solve_probability" : 0.691823884941068,
+                  "title" : "Count Even Numbers",
+                  "uncertainty_reduction" : 0.92162,
+                  "weak_skill_coverage" : 0.609933288550937
+               },
+               {
+                  "challenge_fit" : 0.889827975861972,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 2,
+                  "recommendation_score" : 0.835461761518219,
+                  "solve_probability" : 0.64067614262062,
+                  "title" : "Find Maximum Element",
+                  "uncertainty_reduction" : 0.9215,
+                  "weak_skill_coverage" : 0.602956689521325
+               },
+               {
+                  "challenge_fit" : 0.713918503966087,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.746263326784739,
+                  "solve_probability" : 0.514021322855583,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.661864213155705,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.7344932906494,
+                  "solve_probability" : 0.476542233472108,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 0.95,
+                  "weak_skill_coverage" : 0.58661757891733
+               },
+               {
+                  "challenge_fit" : 0.548240309638133,
+                  "frustration_risk" : 0.122815504578988,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.649152872897429,
+                  "solve_probability" : 0.394733022939456,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 0.9843,
+                  "weak_skill_coverage" : 0.520591337904265
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "-0.5660",
+                  "attempts" : 6,
+                  "last_practiced_at" : "2026-05-01 11:12:00+02",
+                  "skill_code" : "logic",
+                  "skill_id" : 4,
+                  "skill_name" : "Algorithmic Logic",
+                  "solves" : 2,
+                  "uncertainty" : "0.9221"
+               },
+               {
+                  "ability" : "-0.4178",
+                  "attempts" : 4,
+                  "last_practiced_at" : "2026-05-01 11:25:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 2,
+                  "uncertainty" : "0.9215"
+               },
+               {
+                  "ability" : "-0.3500",
+                  "attempts" : 2,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 1,
+                  "uncertainty" : "0.9500"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "-0.8500",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.98742986475695,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.898877336893327,
+                  "solve_probability" : 0.710949502625004,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 0.98,
+                  "weak_skill_coverage" : 0.634135591010801
+               },
+               {
+                  "challenge_fit" : 0.952333491580908,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 3,
+                  "recommendation_score" : 0.873584697551793,
+                  "solve_probability" : 0.685680113938254,
+                  "title" : "Count Even Numbers",
+                  "uncertainty_reduction" : 0.956,
+                  "weak_skill_coverage" : 0.615338505361538
+               },
+               {
+                  "challenge_fit" : 0.877517246855697,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 2,
+                  "recommendation_score" : 0.837542569572369,
+                  "solve_probability" : 0.631812417736102,
+                  "title" : "Find Maximum Element",
+                  "uncertainty_reduction" : 0.95,
+                  "weak_skill_coverage" : 0.610639233949222
+               },
+               {
+                  "challenge_fit" : 0.831510639045072,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 1,
+                  "recommendation_score" : 0.816839596057588,
+                  "solve_probability" : 0.598687660112452,
+                  "title" : "Reverse an Array",
+                  "uncertainty_reduction" : 0.95,
+                  "weak_skill_coverage" : 0.610639233949222
+               },
+               {
+                  "challenge_fit" : 0.711801939561403,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.745310872802632,
+                  "solve_probability" : 0.51249739648421,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "-0.5500",
+                  "attempts" : 4,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "logic",
+                  "skill_id" : 4,
+                  "skill_name" : "Algorithmic Logic",
+                  "solves" : 1,
+                  "uncertainty" : "0.9800"
+               },
+               {
+                  "ability" : "-0.4500",
+                  "attempts" : 3,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 1,
+                  "uncertainty" : "0.9500"
+               },
+               {
+                  "ability" : "-0.3500",
+                  "attempts" : 2,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 1,
+                  "uncertainty" : "0.9500"
+               }
+            ]
+         },
+         "description" : "New learner with weak fundamentals who improves on very easy logic and array work.",
+         "name" : "Beginner Fundamentals",
+         "slug" : "beginner-fundamentals",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:00:00Z",
+               "observed" : 0.36,
+               "predicted" : 0.710949502625004,
+               "problem_id" : 5,
+               "problem_title" : "FizzBuzz",
+               "solved" : 0,
+               "tests_passed" : 6,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            },
+            {
+               "created_at" : "2026-05-01T09:12:00Z",
+               "observed" : 0.85,
+               "predicted" : 0.699285964767269,
+               "problem_id" : 5,
+               "problem_title" : "FizzBuzz",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:25:00Z",
+               "observed" : 1,
+               "predicted" : 0.597245245874326,
+               "problem_id" : 1,
+               "problem_title" : "Reverse an Array",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            }
+         ],
+         "user_id" : 9001
+      },
+      {
+         "after" : {
+            "global_ability" : "-0.4292",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.868397548333016,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 2,
+                  "recommendation_score" : 0.785980713108313,
+                  "solve_probability" : 0.814753765200228,
+                  "title" : "Find Maximum Element",
+                  "uncertainty_reduction" : 0.873,
+                  "weak_skill_coverage" : 0.482407265433823
+               },
+               {
+                  "challenge_fit" : 0.798069212065795,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.780131145429608,
+                  "solve_probability" : 0.865390167312627,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.820772686302526,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 3,
+                  "recommendation_score" : 0.770509161922901,
+                  "solve_probability" : 0.849043665862181,
+                  "title" : "Count Even Numbers",
+                  "uncertainty_reduction" : 0.8984,
+                  "weak_skill_coverage" : 0.485925812347058
+               },
+               {
+                  "challenge_fit" : 0.78131342709785,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.763662624448865,
+                  "solve_probability" : 0.562545667510452,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 0.8671,
+                  "weak_skill_coverage" : 0.55460632901933
+               },
+               {
+                  "challenge_fit" : 0.701728899474573,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.71665332214629,
+                  "solve_probability" : 0.505244807621693,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.85146,
+                  "weak_skill_coverage" : 0.522333269530928
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.0704",
+                  "attempts" : 7,
+                  "last_practiced_at" : "2026-05-01 11:34:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 5,
+                  "uncertainty" : "0.8730"
+               },
+               {
+                  "ability" : "0.1044",
+                  "attempts" : 7,
+                  "last_practiced_at" : "2026-05-01 11:18:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 5,
+                  "uncertainty" : "0.8280"
+               },
+               {
+                  "ability" : "-0.2193",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 11:34:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 2,
+                  "uncertainty" : "0.8671"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "-0.4500",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.877146317446483,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 2,
+                  "recommendation_score" : 0.796591493729865,
+                  "solve_probability" : 0.808454651438533,
+                  "title" : "Find Maximum Element",
+                  "uncertainty_reduction" : 0.9,
+                  "weak_skill_coverage" : 0.48750260351579
+               },
+               {
+                  "challenge_fit" : 0.801460128577027,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.781657057859662,
+                  "solve_probability" : 0.86294870742454,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.827466444616316,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 3,
+                  "recommendation_score" : 0.7788604207805,
+                  "solve_probability" : 0.844224159876253,
+                  "title" : "Count Even Numbers",
+                  "uncertainty_reduction" : 0.92,
+                  "weak_skill_coverage" : 0.490002082812632
+               },
+               {
+                  "challenge_fit" : 0.763658329600664,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.774190373541748,
+                  "solve_probability" : 0.549833997312478,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 0.95,
+                  "weak_skill_coverage" : 0.562176500885798
+               },
+               {
+                  "challenge_fit" : 0.687500231472223,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.725603660547476,
+                  "solve_probability" : 0.49500016666,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.922,
+                  "weak_skill_coverage" : 0.527314225539903
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.0500",
+                  "attempts" : 6,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 4,
+                  "uncertainty" : "0.9000"
+               },
+               {
+                  "ability" : "0.1000",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 4,
+                  "uncertainty" : "0.8800"
+               },
+               {
+                  "ability" : "-0.2500",
+                  "attempts" : 2,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 0,
+                  "uncertainty" : "0.9500"
+               }
+            ]
+         },
+         "description" : "Comfortable with simple strings and arrays, but not yet ready for compound patterns.",
+         "name" : "Beginner Arrays and Strings",
+         "slug" : "beginner-arrays-strings",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:05:00Z",
+               "observed" : 0.24,
+               "predicted" : 0.456361312762921,
+               "problem_id" : 9,
+               "problem_title" : "Anagram Checker",
+               "solved" : 0,
+               "tests_passed" : 4,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            },
+            {
+               "created_at" : "2026-05-01T09:18:00Z",
+               "observed" : 0.85,
+               "predicted" : 0.449589356290249,
+               "problem_id" : 9,
+               "problem_title" : "Anagram Checker",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:34:00Z",
+               "observed" : 1,
+               "predicted" : 0.490163769187339,
+               "problem_id" : 10,
+               "problem_title" : "Intersection of Arrays",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            }
+         ],
+         "user_id" : 9002
+      },
+      {
+         "after" : {
+            "global_ability" : "0.1820",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.912791627292873,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.835756232281793,
+                  "solve_probability" : 0.782790028349131,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.987301414873631,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.810187937787313,
+                  "solve_probability" : 0.710857018709014,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 0.7738,
+                  "weak_skill_coverage" : 0.452569204376717
+               },
+               {
+                  "challenge_fit" : 0.997764396265143,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.80547673963233,
+                  "solve_probability" : 0.721609634689097,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.72856,
+                  "weak_skill_coverage" : 0.443083045252061
+               },
+               {
+                  "challenge_fit" : 0.981717675838024,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.782836175658962,
+                  "solve_probability" : 0.706836726603378,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 0.68332,
+                  "weak_skill_coverage" : 0.433596886127404
+               },
+               {
+                  "challenge_fit" : 0.791487472756316,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 1,
+                  "recommendation_score" : 0.779169362740342,
+                  "solve_probability" : 0.870129019615452,
+                  "title" : "Reverse an Array",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.3841",
+                  "attempts" : 15,
+                  "last_practiced_at" : "2026-05-01 11:40:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 10,
+                  "uncertainty" : "0.5476"
+               },
+               {
+                  "ability" : "0.2500",
+                  "attempts" : 10,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 7,
+                  "uncertainty" : "0.6200"
+               },
+               {
+                  "ability" : "0.1697",
+                  "attempts" : 10,
+                  "last_practiced_at" : "2026-05-01 11:24:00+02",
+                  "skill_code" : "sliding_window",
+                  "skill_id" : 8,
+                  "skill_name" : "Sliding Window",
+                  "solves" : 6,
+                  "uncertainty" : "0.6398"
+               },
+               {
+                  "ability" : "0.0316",
+                  "attempts" : 1,
+                  "last_practiced_at" : "2026-05-01 11:40:00+02",
+                  "skill_code" : "prefix_sum",
+                  "skill_id" : 9,
+                  "skill_name" : "Prefix Sum",
+                  "solves" : 1,
+                  "uncertainty" : "0.9700"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "0.1500",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.920416859479596,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.839187586765818,
+                  "solve_probability" : 0.777299861174691,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.973155581062693,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.810092814113546,
+                  "solve_probability" : 0.700672018365139,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 0.8,
+                  "weak_skill_coverage" : 0.456691210541335
+               },
+               {
+                  "challenge_fit" : 0.98742986475695,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.808350802303028,
+                  "solve_probability" : 0.710949502625004,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.76,
+                  "weak_skill_coverage" : 0.448029452649602
+               },
+               {
+                  "challenge_fit" : 0.965454382643696,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.784296395879131,
+                  "solve_probability" : 0.695127155503461,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 0.72,
+                  "weak_skill_coverage" : 0.439367694757869
+               },
+               {
+                  "challenge_fit" : 0.796569655727975,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 1,
+                  "recommendation_score" : 0.781456345077589,
+                  "solve_probability" : 0.866469847875858,
+                  "title" : "Reverse an Array",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.3500",
+                  "attempts" : 12,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 8,
+                  "uncertainty" : "0.6000"
+               },
+               {
+                  "ability" : "0.2500",
+                  "attempts" : 10,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 7,
+                  "uncertainty" : "0.6200"
+               },
+               {
+                  "ability" : "0.1500",
+                  "attempts" : 8,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "sliding_window",
+                  "skill_id" : 8,
+                  "skill_name" : "Sliding Window",
+                  "solves" : 5,
+                  "uncertainty" : "0.6800"
+               }
+            ]
+         },
+         "description" : "Good with medium array patterns and improving toward richer sliding-window problems.",
+         "name" : "Intermediate Window and Hashing",
+         "slug" : "intermediate-window-hash",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:10:00Z",
+               "observed" : 0.42,
+               "predicted" : 0.430453776060771,
+               "problem_id" : 14,
+               "problem_title" : "Longest Substring Without Repeats",
+               "solved" : 0,
+               "tests_passed" : 7,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            },
+            {
+               "created_at" : "2026-05-01T09:24:00Z",
+               "observed" : 0.85,
+               "predicted" : 0.430154702219465,
+               "problem_id" : 14,
+               "problem_title" : "Longest Substring Without Repeats",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:40:00Z",
+               "observed" : 1,
+               "predicted" : 0.342435396262636,
+               "problem_id" : 17,
+               "problem_title" : "Subarray Sum Equals K",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            }
+         ],
+         "user_id" : 9003
+      },
+      {
+         "after" : {
+            "global_ability" : "0.4204",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.995552937999502,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.872998822099776,
+                  "solve_probability" : 0.723201884640359,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.999597377953015,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.872818820078857,
+                  "solve_probability" : 0.72028988787383,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.993227224231954,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.871952250904379,
+                  "solve_probability" : 0.715123601447007,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.972893370297559,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.858802016633901,
+                  "solve_probability" : 0.700483226614242,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.903821877221481,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.831719844749667,
+                  "solve_probability" : 0.789248248400533,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.8713",
+                  "attempts" : 23,
+                  "last_practiced_at" : "2026-05-01 11:00:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 19,
+                  "uncertainty" : "0.2910"
+               },
+               {
+                  "ability" : "0.9820",
+                  "attempts" : 21,
+                  "last_practiced_at" : "2026-05-01 11:00:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 17,
+                  "uncertainty" : "0.3395"
+               },
+               {
+                  "ability" : "-0.5489",
+                  "attempts" : 6,
+                  "last_practiced_at" : "2026-05-01 11:20:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 1,
+                  "uncertainty" : "0.8245"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "0.4000",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.998749524189422,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.87443728588524,
+                  "solve_probability" : 0.719099657416384,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.994668669326815,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.870600901197067,
+                  "solve_probability" : 0.716161441915307,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.98742986475695,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.869343439140628,
+                  "solve_probability" : 0.710949502625004,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.966924649255275,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.856116092164874,
+                  "solve_probability" : 0.696185747463798,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.908562523552002,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.833853135598401,
+                  "solve_probability" : 0.785834983042559,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.8500",
+                  "attempts" : 22,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 18,
+                  "uncertainty" : "0.3000"
+               },
+               {
+                  "ability" : "0.9500",
+                  "attempts" : 20,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 16,
+                  "uncertainty" : "0.3500"
+               },
+               {
+                  "ability" : "-0.5500",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 1,
+                  "uncertainty" : "0.8500"
+               }
+            ]
+         },
+         "description" : "Strong on graph traversal and cycle detection, weak when a problem shifts to DP.",
+         "name" : "Graph Specialist",
+         "slug" : "graph-specialist",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:00:00Z",
+               "observed" : 1,
+               "predicted" : 0.33403307324818,
+               "problem_id" : 25,
+               "problem_title" : "Course Schedule (Cycle Detect)",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:20:00Z",
+               "observed" : 0.12,
+               "predicted" : 0.106214991675176,
+               "problem_id" : 28,
+               "problem_title" : "Coin Change",
+               "solved" : 0,
+               "tests_passed" : 2,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            }
+         ],
+         "user_id" : 9004
+      },
+      {
+         "after" : {
+            "global_ability" : "0.4396",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.998637294721743,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.874386782624785,
+                  "solve_probability" : 0.719018852199655,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.994247573241289,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.87041140795858,
+                  "solve_probability" : 0.724141747266272,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.999814722563458,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.839253387587121,
+                  "solve_probability" : 0.71986660024569,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 0.865,
+                  "weak_skill_coverage" : 0.481347049734261
+               },
+               {
+                  "challenge_fit" : 0.899410897374027,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.829734903818312,
+                  "solve_probability" : 0.7924241538907,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.963307945016677,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.816270925168925,
+                  "solve_probability" : 0.746418279587993,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.82,
+                  "weak_skill_coverage" : 0.475129399645681
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "1.0022",
+                  "attempts" : 19,
+                  "last_practiced_at" : "2026-05-01 11:08:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 15,
+                  "uncertainty" : "0.3395"
+               },
+               {
+                  "ability" : "0.2500",
+                  "attempts" : 8,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 6,
+                  "uncertainty" : "0.5500"
+               },
+               {
+                  "ability" : "-0.4000",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 11:28:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 1,
+                  "uncertainty" : "0.8536"
+               },
+               {
+                  "ability" : "-0.3499",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 11:28:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 1,
+                  "uncertainty" : "0.8536"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "0.4200",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.999709316906963,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.872869192608133,
+                  "solve_probability" : 0.720209291826986,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.993114035695819,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.871901316063118,
+                  "solve_probability" : 0.71504210570099,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.994301543295342,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.836772456916469,
+                  "solve_probability" : 0.715897111172647,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 0.865,
+                  "weak_skill_coverage" : 0.481347049734261
+               },
+               {
+                  "challenge_fit" : 0.903914296496871,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.831761433423592,
+                  "solve_probability" : 0.789181706522253,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.96848535374627,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.818600759097242,
+                  "solve_probability" : 0.742690545302686,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.82,
+                  "weak_skill_coverage" : 0.475129399645681
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.9500",
+                  "attempts" : 18,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 14,
+                  "uncertainty" : "0.3500"
+               },
+               {
+                  "ability" : "0.2500",
+                  "attempts" : 8,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 6,
+                  "uncertainty" : "0.5500"
+               },
+               {
+                  "ability" : "-0.4000",
+                  "attempts" : 4,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 1,
+                  "uncertainty" : "0.8800"
+               },
+               {
+                  "ability" : "-0.3500",
+                  "attempts" : 4,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 1,
+                  "uncertainty" : "0.8800"
+               }
+            ]
+         },
+         "description" : "Comfortable with dynamic programming but shaky on graph search and traversal.",
+         "name" : "DP Specialist",
+         "slug" : "dp-specialist",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:08:00Z",
+               "observed" : 1,
+               "predicted" : 0.347669277619822,
+               "problem_id" : 28,
+               "problem_title" : "Coin Change",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:28:00Z",
+               "observed" : 0.18,
+               "predicted" : 0.17866771788822,
+               "problem_id" : 23,
+               "problem_title" : "Number of Islands",
+               "solved" : 0,
+               "tests_passed" : 3,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            }
+         ],
+         "user_id" : 9005
+      },
+      {
+         "after" : {
+            "global_ability" : "0.0749",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.990954798099507,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.864798409193012,
+                  "solve_probability" : 0.726512545368355,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 0.97,
+                  "weak_skill_coverage" : 0.499475000192937
+               },
+               {
+                  "challenge_fit" : 0.938847817451469,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.847481517853161,
+                  "solve_probability" : 0.764029571434942,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.901867635454753,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.827161685983579,
+                  "solve_probability" : 0.649344697527422,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.982,
+                  "weak_skill_coverage" : 0.499685000115762
+               },
+               {
+                  "challenge_fit" : 0.897205518427392,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.823676858316444,
+                  "solve_probability" : 0.645987973267722,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 0.985,
+                  "weak_skill_coverage" : 0.499737500096469
+               },
+               {
+                  "challenge_fit" : 0.889277896255104,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.820270053353384,
+                  "solve_probability" : 0.640280085303675,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 0.976,
+                  "weak_skill_coverage" : 0.49958000015435
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.3280",
+                  "attempts" : 10,
+                  "last_practiced_at" : "2026-05-01 11:05:00+02",
+                  "skill_code" : "trees",
+                  "skill_id" : 11,
+                  "skill_name" : "Tree Traversal",
+                  "solves" : 7,
+                  "uncertainty" : "0.6790"
+               },
+               {
+                  "ability" : "0.2512",
+                  "attempts" : 10,
+                  "last_practiced_at" : "2026-05-01 11:27:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 6,
+                  "uncertainty" : "0.7057"
+               },
+               {
+                  "ability" : "0.0053",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 11:27:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 2,
+                  "uncertainty" : "0.8245"
+               },
+               {
+                  "ability" : "0.0021",
+                  "attempts" : 1,
+                  "last_practiced_at" : "2026-05-01 11:27:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 0,
+                  "uncertainty" : "0.9700"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "0.0500",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.998451141634912,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.874303013735711,
+                  "solve_probability" : 0.721115178022863,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.945123726459568,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.850305676906805,
+                  "solve_probability" : 0.759510916949111,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.893562702353336,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.827103216059001,
+                  "solve_probability" : 0.643365145694402,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.888932361692842,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.823019562761779,
+                  "solve_probability" : 0.640031300418846,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.88074387640389,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.82133474438175,
+                  "solve_probability" : 0.634135591010801,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.3000",
+                  "attempts" : 9,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "trees",
+                  "skill_id" : 11,
+                  "skill_name" : "Tree Traversal",
+                  "solves" : 6,
+                  "uncertainty" : "0.7000"
+               },
+               {
+                  "ability" : "0.2200",
+                  "attempts" : 8,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 5,
+                  "uncertainty" : "0.7500"
+               },
+               {
+                  "ability" : "0.0000",
+                  "attempts" : 4,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 2,
+                  "uncertainty" : "0.8500"
+               }
+            ]
+         },
+         "description" : "Developing recursion and traversal skills, with most confidence on trees.",
+         "name" : "Tree and DFS Learner",
+         "slug" : "tree-dfs-learner",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:05:00Z",
+               "observed" : 1,
+               "predicted" : 0.299432857526027,
+               "problem_id" : 22,
+               "problem_title" : "Binary Tree Level Order Traversal",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:27:00Z",
+               "observed" : 0.3,
+               "predicted" : 0.168737693077325,
+               "problem_id" : 24,
+               "problem_title" : "Clone Graph",
+               "solved" : 0,
+               "tests_passed" : 5,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            }
+         ],
+         "user_id" : 9006
+      },
+      {
+         "after" : {
+            "global_ability" : "0.3237",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.968302245671081,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.752415094587211,
+                  "solve_probability" : 0.742822383116821,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 0.57382,
+                  "weak_skill_coverage" : 0.423660336140898
+               },
+               {
+                  "challenge_fit" : 0.940699372824696,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.744984424660619,
+                  "solve_probability" : 0.762696451566219,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.57756,
+                  "weak_skill_coverage" : 0.424630827558022
+               },
+               {
+                  "challenge_fit" : 0.705919304563619,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.738663687053629,
+                  "solve_probability" : 0.931738100714194,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.936562190279528,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.734979395997312,
+                  "solve_probability" : 0.76567522299874,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 0.5563,
+                  "weak_skill_coverage" : 0.417065641486097
+               },
+               {
+                  "challenge_fit" : 0.667964234273805,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 13,
+                  "recommendation_score" : 0.725583905423212,
+                  "solve_probability" : 0.48093424867714,
+                  "title" : "Max Sum Subarray of Size K",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.3197",
+                  "attempts" : 12,
+                  "last_practiced_at" : "2026-05-01 11:03:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 9,
+                  "uncertainty" : "0.5626"
+               },
+               {
+                  "ability" : "0.3500",
+                  "attempts" : 10,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 8,
+                  "uncertainty" : "0.5500"
+               },
+               {
+                  "ability" : "0.2800",
+                  "attempts" : 9,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 7,
+                  "uncertainty" : "0.6000"
+               },
+               {
+                  "ability" : "0.1800",
+                  "attempts" : 8,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 5,
+                  "uncertainty" : "0.6500"
+               },
+               {
+                  "ability" : "0.1295",
+                  "attempts" : 8,
+                  "last_practiced_at" : "2026-05-01 11:03:00+02",
+                  "skill_code" : "prefix_sum",
+                  "skill_id" : 9,
+                  "skill_name" : "Prefix Sum",
+                  "solves" : 5,
+                  "uncertainty" : "0.6790"
+               },
+               {
+                  "ability" : "-0.0298",
+                  "attempts" : 7,
+                  "last_practiced_at" : "2026-05-01 11:42:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 3,
+                  "uncertainty" : "0.7527"
+               },
+               {
+                  "ability" : "-0.1000",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 2,
+                  "uncertainty" : "0.8200"
+               },
+               {
+                  "ability" : "0.0472",
+                  "attempts" : 2,
+                  "last_practiced_at" : "2026-05-01 11:42:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 1,
+                  "uncertainty" : "0.9409"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "0.2800",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.983767678566216,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.762652048117315,
+                  "solve_probability" : 0.731687271432324,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 0.586,
+                  "weak_skill_coverage" : 0.42702637105007
+               },
+               {
+                  "challenge_fit" : 0.954858631647417,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.754165384325666,
+                  "solve_probability" : 0.75250178521386,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.588,
+                  "weak_skill_coverage" : 0.427516000337313
+               },
+               {
+                  "challenge_fit" : 0.950095610389306,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.743410512709064,
+                  "solve_probability" : 0.755931160519699,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 0.565,
+                  "weak_skill_coverage" : 0.419469952135505
+               },
+               {
+                  "challenge_fit" : 0.709853200117065,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.740433940052679,
+                  "solve_probability" : 0.928905695915713,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.652827705882539,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 13,
+                  "recommendation_score" : 0.718772467647143,
+                  "solve_probability" : 0.470035948235428,
+                  "title" : "Max Sum Subarray of Size K",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.3000",
+                  "attempts" : 11,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 8,
+                  "uncertainty" : "0.5800"
+               },
+               {
+                  "ability" : "0.3500",
+                  "attempts" : 10,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 8,
+                  "uncertainty" : "0.5500"
+               },
+               {
+                  "ability" : "0.2800",
+                  "attempts" : 9,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 7,
+                  "uncertainty" : "0.6000"
+               },
+               {
+                  "ability" : "0.1800",
+                  "attempts" : 8,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 5,
+                  "uncertainty" : "0.6500"
+               },
+               {
+                  "ability" : "0.1000",
+                  "attempts" : 7,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "prefix_sum",
+                  "skill_id" : 9,
+                  "skill_name" : "Prefix Sum",
+                  "solves" : 4,
+                  "uncertainty" : "0.7000"
+               },
+               {
+                  "ability" : "-0.0500",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 2,
+                  "uncertainty" : "0.8000"
+               },
+               {
+                  "ability" : "-0.1000",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 2,
+                  "uncertainty" : "0.8200"
+               }
+            ]
+         },
+         "description" : "Balanced intermediate learner with mild weakness in harder graph and DP tasks.",
+         "name" : "Well Rounded Intermediate",
+         "slug" : "well-rounded-intermediate",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:03:00Z",
+               "observed" : 1,
+               "predicted" : 0.38530286398705,
+               "problem_id" : 17,
+               "problem_title" : "Subarray Sum Equals K",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:21:00Z",
+               "observed" : 0.42,
+               "predicted" : 0.211401191647056,
+               "problem_id" : 23,
+               "problem_title" : "Number of Islands",
+               "solved" : 0,
+               "tests_passed" : 7,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            },
+            {
+               "created_at" : "2026-05-01T09:42:00Z",
+               "observed" : 0.85,
+               "predicted" : 0.215834192763226,
+               "problem_id" : 23,
+               "problem_title" : "Number of Islands",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            }
+         ],
+         "user_id" : 9007
+      },
+      {
+         "after" : {
+            "global_ability" : "-0.0801",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.979231777470728,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.865654299861827,
+                  "solve_probability" : 0.734953120221076,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.861049518213026,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.780955403015365,
+                  "solve_probability" : 0.619955653113379,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.85162,
+                  "weak_skill_coverage" : 0.492636479278013
+               },
+               {
+                  "challenge_fit" : 0.87426590303571,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.761410083078417,
+                  "solve_probability" : 0.629471450185711,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 0.75135,
+                  "weak_skill_coverage" : 0.478881706849391
+               },
+               {
+                  "challenge_fit" : 0.859025699674017,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.75804085535775,
+                  "solve_probability" : 0.618498503765292,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 0.75216,
+                  "weak_skill_coverage" : 0.484189162017769
+               },
+               {
+                  "challenge_fit" : 0.748423585959065,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.757790613681579,
+                  "solve_probability" : 0.901135018109473,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.1200",
+                  "attempts" : 9,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 5,
+                  "uncertainty" : "0.7500"
+               },
+               {
+                  "ability" : "0.0491",
+                  "attempts" : 9,
+                  "last_practiced_at" : "2026-05-01 11:18:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 4,
+                  "uncertainty" : "0.7527"
+               },
+               {
+                  "ability" : "-0.1215",
+                  "attempts" : 7,
+                  "last_practiced_at" : "2026-05-01 11:18:00+02",
+                  "skill_code" : "sliding_window",
+                  "skill_id" : 8,
+                  "skill_name" : "Sliding Window",
+                  "solves" : 2,
+                  "uncertainty" : "0.7904"
+               },
+               {
+                  "ability" : "-0.2194",
+                  "attempts" : 6,
+                  "last_practiced_at" : "2026-05-01 11:37:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 1,
+                  "uncertainty" : "0.8536"
+               },
+               {
+                  "ability" : "0.0015",
+                  "attempts" : 1,
+                  "last_practiced_at" : "2026-05-01 11:37:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 0,
+                  "uncertainty" : "0.9700"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "-0.0800",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.979204722963168,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.865642125333426,
+                  "solve_probability" : 0.734972599466519,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.861258933809848,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 8,
+                  "recommendation_score" : 0.7866919107418,
+                  "solve_probability" : 0.62010643234309,
+                  "title" : "First Unique Character",
+                  "uncertainty_reduction" : 0.88,
+                  "weak_skill_coverage" : 0.492501562109474
+               },
+               {
+                  "challenge_fit" : 0.87444405760742,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 10,
+                  "recommendation_score" : 0.766192144892241,
+                  "solve_probability" : 0.629599721477342,
+                  "title" : "Intersection of Arrays",
+                  "uncertainty_reduction" : 0.775,
+                  "weak_skill_coverage" : 0.478769275875609
+               },
+               {
+                  "challenge_fit" : 0.859294403612907,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 6,
+                  "recommendation_score" : 0.765684799740738,
+                  "solve_probability" : 0.618691970601293,
+                  "title" : "Two Sum",
+                  "uncertainty_reduction" : 0.79,
+                  "weak_skill_coverage" : 0.484009272459717
+               },
+               {
+                  "challenge_fit" : 0.826230126591362,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 9,
+                  "recommendation_score" : 0.762616512581376,
+                  "solve_probability" : 0.59488569114578,
+                  "title" : "Anagram Checker",
+                  "uncertainty_reduction" : 0.86,
+                  "weak_skill_coverage" : 0.491251822461053
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.1200",
+                  "attempts" : 9,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 5,
+                  "uncertainty" : "0.7500"
+               },
+               {
+                  "ability" : "0.0500",
+                  "attempts" : 7,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 4,
+                  "uncertainty" : "0.8000"
+               },
+               {
+                  "ability" : "-0.1200",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "sliding_window",
+                  "skill_id" : 8,
+                  "skill_name" : "Sliding Window",
+                  "solves" : 2,
+                  "uncertainty" : "0.8400"
+               },
+               {
+                  "ability" : "-0.2200",
+                  "attempts" : 5,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 1,
+                  "uncertainty" : "0.8800"
+               }
+            ]
+         },
+         "description" : "Can solve some medium problems but frequently misfires and accumulates failed attempts.",
+         "name" : "Inconsistent Learner",
+         "slug" : "inconsistent-learner",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:06:00Z",
+               "observed" : 0.24,
+               "predicted" : 0.316154715500888,
+               "problem_id" : 14,
+               "problem_title" : "Longest Substring Without Repeats",
+               "solved" : 0,
+               "tests_passed" : 4,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            },
+            {
+               "created_at" : "2026-05-01T09:18:00Z",
+               "observed" : 0.36,
+               "predicted" : 0.31415180255556,
+               "problem_id" : 14,
+               "problem_title" : "Longest Substring Without Repeats",
+               "solved" : 0,
+               "tests_passed" : 6,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            },
+            {
+               "created_at" : "2026-05-01T09:37:00Z",
+               "observed" : 0.18,
+               "predicted" : 0.153852414478454,
+               "problem_id" : 23,
+               "problem_title" : "Number of Islands",
+               "solved" : 0,
+               "tests_passed" : 3,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            }
+         ],
+         "user_id" : 9008
+      },
+      {
+         "after" : {
+            "global_ability" : "-0.3041",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.95707884577147,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.855685480597161,
+                  "solve_probability" : 0.689096768955458,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.873277495036078,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.790205662596068,
+                  "solve_probability" : 0.628759796425976,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 0.8396,
+                  "weak_skill_coverage" : 0.51724315931933
+               },
+               {
+                  "challenge_fit" : 0.88193195617962,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 1,
+                  "recommendation_score" : 0.789110630316553,
+                  "solve_probability" : 0.805008991550674,
+                  "title" : "Reverse an Array",
+                  "uncertainty_reduction" : 0.8468,
+                  "weak_skill_coverage" : 0.499525000142896
+               },
+               {
+                  "challenge_fit" : 0.856743496745966,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 2,
+                  "recommendation_score" : 0.779775823571409,
+                  "solve_probability" : 0.823144682342905,
+                  "title" : "Find Maximum Element",
+                  "uncertainty_reduction" : 0.8468,
+                  "weak_skill_coverage" : 0.499525000142896
+               },
+               {
+                  "challenge_fit" : 0.778737914396842,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.771432061478579,
+                  "solve_probability" : 0.879308701634274,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.0019",
+                  "attempts" : 6,
+                  "last_practiced_at" : "2026-05-01 11:13:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 3,
+                  "uncertainty" : "0.8468"
+               },
+               {
+                  "ability" : "-0.0690",
+                  "attempts" : 6,
+                  "last_practiced_at" : "2026-05-01 11:46:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 3,
+                  "uncertainty" : "0.8396"
+               },
+               {
+                  "ability" : "-0.1800",
+                  "attempts" : 2,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 0,
+                  "uncertainty" : "0.9400"
+               },
+               {
+                  "ability" : "0.0891",
+                  "attempts" : 2,
+                  "last_practiced_at" : "2026-05-01 11:46:00+02",
+                  "skill_code" : "sliding_window",
+                  "skill_id" : 8,
+                  "skill_name" : "Sliding Window",
+                  "solves" : 2,
+                  "uncertainty" : "0.9409"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "-0.3500",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.943303748854713,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 4,
+                  "recommendation_score" : 0.849486686984621,
+                  "solve_probability" : 0.679178699175393,
+                  "title" : "Palindrome String",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.892505125565508,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 1,
+                  "recommendation_score" : 0.804627306504478,
+                  "solve_probability" : 0.797396309592834,
+                  "title" : "Reverse an Array",
+                  "uncertainty_reduction" : 0.9,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.848110047151697,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 7,
+                  "recommendation_score" : 0.796894318087999,
+                  "solve_probability" : 0.610639233949222,
+                  "title" : "Contains Duplicate",
+                  "uncertainty_reduction" : 0.92,
+                  "weak_skill_coverage" : 0.52497918747894
+               },
+               {
+                  "challenge_fit" : 0.866557954749311,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 2,
+                  "recommendation_score" : 0.79495107963719,
+                  "solve_probability" : 0.816078272580496,
+                  "title" : "Find Maximum Element",
+                  "uncertainty_reduction" : 0.9,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.816732219488457,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 3,
+                  "recommendation_score" : 0.776529498769806,
+                  "solve_probability" : 0.851952801968311,
+                  "title" : "Count Even Numbers",
+                  "uncertainty_reduction" : 0.92,
+                  "weak_skill_coverage" : 0.5
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.0000",
+                  "attempts" : 4,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 2,
+                  "uncertainty" : "0.9000"
+               },
+               {
+                  "ability" : "-0.1000",
+                  "attempts" : 3,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 1,
+                  "uncertainty" : "0.9200"
+               },
+               {
+                  "ability" : "-0.1800",
+                  "attempts" : 2,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 0,
+                  "uncertainty" : "0.9400"
+               }
+            ]
+         },
+         "description" : "Starts near beginner level but adapts quickly after a few successful runs.",
+         "name" : "Fast Improver",
+         "slug" : "fast-improver",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:00:00Z",
+               "observed" : 0.3,
+               "predicted" : 0.51749285766639,
+               "problem_id" : 6,
+               "problem_title" : "Two Sum",
+               "solved" : 0,
+               "tests_passed" : 5,
+               "tests_total" : 10,
+               "verdict" : "wrong_answer"
+            },
+            {
+               "created_at" : "2026-05-01T09:13:00Z",
+               "observed" : 0.85,
+               "predicted" : 0.510193587370701,
+               "problem_id" : 6,
+               "problem_title" : "Two Sum",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:29:00Z",
+               "observed" : 1,
+               "predicted" : 0.32162804622205,
+               "problem_id" : 13,
+               "problem_title" : "Max Sum Subarray of Size K",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:46:00Z",
+               "observed" : 1,
+               "predicted" : 0.274641381381727,
+               "problem_id" : 14,
+               "problem_title" : "Longest Substring Without Repeats",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            }
+         ],
+         "user_id" : 9009
+      },
+      {
+         "after" : {
+            "global_ability" : "1.1067",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.940454230253762,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 13,
+                  "recommendation_score" : 0.846204403614193,
+                  "solve_probability" : 0.677127045782709,
+                  "title" : "Max Sum Subarray of Size K",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.955321292476167,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.9,
+                  "problem_id" : 14,
+                  "recommendation_score" : 0.766833879907499,
+                  "solve_probability" : 0.68783133058284,
+                  "title" : "Longest Substring Without Repeats",
+                  "uncertainty_reduction" : 0.696,
+                  "weak_skill_coverage" : 0.430957193172896
+               },
+               {
+                  "challenge_fit" : 0.656109384961345,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.716249223232605,
+                  "solve_probability" : 0.967601242827832,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.976855852630984,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 15,
+                  "recommendation_score" : 0.699644967258609,
+                  "solve_probability" : 0.736663786105691,
+                  "title" : "Container With Most Water",
+                  "uncertainty_reduction" : 0.334,
+                  "weak_skill_coverage" : 0.373039334298665
+               },
+               {
+                  "challenge_fit" : 0.963243601451871,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 18,
+                  "recommendation_score" : 0.680925722900642,
+                  "solve_probability" : 0.693535393045347,
+                  "title" : "Product of Array Except Self",
+                  "uncertainty_reduction" : 0.28,
+                  "weak_skill_coverage" : 0.365864408989199
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.9222",
+                  "attempts" : 25,
+                  "last_practiced_at" : "2026-05-01 11:04:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 21,
+                  "uncertainty" : "0.1940"
+               },
+               {
+                  "ability" : "0.9022",
+                  "attempts" : 25,
+                  "last_practiced_at" : "2026-05-01 11:04:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 21,
+                  "uncertainty" : "0.1940"
+               },
+               {
+                  "ability" : "0.9455",
+                  "attempts" : 23,
+                  "last_practiced_at" : "2026-05-01 11:51:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 19,
+                  "uncertainty" : "0.2070"
+               },
+               {
+                  "ability" : "0.7800",
+                  "attempts" : 20,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "trees",
+                  "skill_id" : 11,
+                  "skill_name" : "Tree Traversal",
+                  "solves" : 17,
+                  "uncertainty" : "0.2200"
+               },
+               {
+                  "ability" : "0.6500",
+                  "attempts" : 18,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 16,
+                  "uncertainty" : "0.2500"
+               },
+               {
+                  "ability" : "0.7200",
+                  "attempts" : 18,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 15,
+                  "uncertainty" : "0.2400"
+               },
+               {
+                  "ability" : "0.6115",
+                  "attempts" : 17,
+                  "last_practiced_at" : "2026-05-01 11:51:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 15,
+                  "uncertainty" : "0.2425"
+               },
+               {
+                  "ability" : "0.5800",
+                  "attempts" : 15,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 13,
+                  "uncertainty" : "0.2600"
+               },
+               {
+                  "ability" : "0.5500",
+                  "attempts" : 14,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "prefix_sum",
+                  "skill_id" : 9,
+                  "skill_name" : "Prefix Sum",
+                  "solves" : 12,
+                  "uncertainty" : "0.2800"
+               }
+            ]
+         },
+         "before" : {
+            "global_ability" : "1.0500",
+            "recommendations" : [
+               {
+                  "challenge_fit" : 0.923067472782059,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.98,
+                  "problem_id" : 13,
+                  "recommendation_score" : 0.838380362751927,
+                  "solve_probability" : 0.664608580403083,
+                  "title" : "Max Sum Subarray of Size K",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.938234745435269,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.9,
+                  "problem_id" : 14,
+                  "recommendation_score" : 0.759144933739095,
+                  "solve_probability" : 0.675529016713394,
+                  "title" : "Longest Substring Without Repeats",
+                  "uncertainty_reduction" : 0.696,
+                  "weak_skill_coverage" : 0.430957193172896
+               },
+               {
+                  "challenge_fit" : 0.658644663461661,
+                  "frustration_risk" : 0,
+                  "novelty" : 0.96,
+                  "problem_id" : 5,
+                  "recommendation_score" : 0.717390098557747,
+                  "solve_probability" : 0.965775842307604,
+                  "title" : "FizzBuzz",
+                  "uncertainty_reduction" : 1,
+                  "weak_skill_coverage" : 0.5
+               },
+               {
+                  "challenge_fit" : 0.992336165726525,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 15,
+                  "recommendation_score" : 0.706611108151603,
+                  "solve_probability" : 0.725517960676902,
+                  "title" : "Container With Most Water",
+                  "uncertainty_reduction" : 0.334,
+                  "weak_skill_coverage" : 0.373039334298665
+               },
+               {
+                  "challenge_fit" : 0.946324630262536,
+                  "frustration_risk" : 0,
+                  "novelty" : 1,
+                  "problem_id" : 18,
+                  "recommendation_score" : 0.673312185865441,
+                  "solve_probability" : 0.681353733789026,
+                  "title" : "Product of Array Except Self",
+                  "uncertainty_reduction" : 0.28,
+                  "weak_skill_coverage" : 0.365864408989199
+               }
+            ],
+            "skills" : [
+               {
+                  "ability" : "0.9000",
+                  "attempts" : 24,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "graphs",
+                  "skill_id" : 12,
+                  "skill_name" : "Graph Theory",
+                  "solves" : 20,
+                  "uncertainty" : "0.2000"
+               },
+               {
+                  "ability" : "0.8800",
+                  "attempts" : 24,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "bfs_dfs",
+                  "skill_id" : 13,
+                  "skill_name" : "BFS/DFS Search",
+                  "solves" : 20,
+                  "uncertainty" : "0.2000"
+               },
+               {
+                  "ability" : "0.8500",
+                  "attempts" : 21,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "dp",
+                  "skill_id" : 14,
+                  "skill_name" : "Dynamic Programming",
+                  "solves" : 17,
+                  "uncertainty" : "0.2200"
+               },
+               {
+                  "ability" : "0.7800",
+                  "attempts" : 20,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "trees",
+                  "skill_id" : 11,
+                  "skill_name" : "Tree Traversal",
+                  "solves" : 17,
+                  "uncertainty" : "0.2200"
+               },
+               {
+                  "ability" : "0.6500",
+                  "attempts" : 18,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "arrays",
+                  "skill_id" : 2,
+                  "skill_name" : "Arrays",
+                  "solves" : 16,
+                  "uncertainty" : "0.2500"
+               },
+               {
+                  "ability" : "0.7200",
+                  "attempts" : 18,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "hashing",
+                  "skill_id" : 6,
+                  "skill_name" : "Hash Maps / Hash Sets",
+                  "solves" : 15,
+                  "uncertainty" : "0.2400"
+               },
+               {
+                  "ability" : "0.6000",
+                  "attempts" : 16,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "strings",
+                  "skill_id" : 3,
+                  "skill_name" : "Strings",
+                  "solves" : 14,
+                  "uncertainty" : "0.2500"
+               },
+               {
+                  "ability" : "0.5800",
+                  "attempts" : 15,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "two_pointers",
+                  "skill_id" : 7,
+                  "skill_name" : "Two Pointers",
+                  "solves" : 13,
+                  "uncertainty" : "0.2600"
+               },
+               {
+                  "ability" : "0.5500",
+                  "attempts" : 14,
+                  "last_practiced_at" : "2026-05-01 10:55:00+02",
+                  "skill_code" : "prefix_sum",
+                  "skill_id" : 9,
+                  "skill_name" : "Prefix Sum",
+                  "solves" : 12,
+                  "uncertainty" : "0.2800"
+               }
+            ]
+         },
+         "description" : "Strong across the board and mostly benefits from hard graph and DP challenges.",
+         "name" : "Advanced All Rounder",
+         "slug" : "advanced-all-rounder",
+         "submissions" : [
+            {
+               "created_at" : "2026-05-01T09:04:00Z",
+               "observed" : 1,
+               "predicted" : 0.445220764892785,
+               "problem_id" : 26,
+               "problem_title" : "Word Ladder",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:26:00Z",
+               "observed" : 1,
+               "predicted" : 0.381449586805166,
+               "problem_id" : 29,
+               "problem_title" : "Longest Increasing Subsequence",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            },
+            {
+               "created_at" : "2026-05-01T09:51:00Z",
+               "observed" : 1,
+               "predicted" : 0.281870939108004,
+               "problem_id" : 30,
+               "problem_title" : "Edit Distance",
+               "solved" : 1,
+               "tests_passed" : null,
+               "tests_total" : null,
+               "verdict" : "accepted"
+            }
+         ],
+         "user_id" : 9010
+      }
+   ],
+   "run_label" : "postgres-synthetic-recommendation-demo",
+   "top_n" : 5
+}

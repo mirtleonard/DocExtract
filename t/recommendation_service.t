@@ -15,6 +15,8 @@ use DocExtract::AlgoRecommender::RecommendationService;
         my ($class) = @_;
 
         return bless {
+            last_candidate_sql => undef,
+            last_candidate_bind => [],
             user_skills => {
                 7 => [
                     {
@@ -73,6 +75,8 @@ use DocExtract::AlgoRecommender::RecommendationService;
         }
 
         if ($sql =~ /from problems p/) {
+            $self->{last_candidate_sql} = $sql;
+            $self->{last_candidate_bind} = [@bind];
             return [ map { +{ %$_ } } @{$self->{candidate_problems}} ];
         }
 
@@ -181,5 +185,23 @@ my $recommended = $db_recommendation->recommend_for_user(
 
 is(scalar @{$recommended}, 1, 'recommend_for_user applies requested limit');
 is($recommended->[0]{problem_id}, 11, 'recommend_for_user loads DB-backed candidates and ranks graph practice first');
+like($dbh->{last_candidate_sql}, qr/last_attempt_at < \?/, 'default recommendation query applies recent-attempt cooldown');
+is(scalar @{ $dbh->{last_candidate_bind} }, 3, 'default recommendation query binds user_id, cutoff, and limit');
+
+my $no_cooldown_dbh = Local::RecommendationDBH->new();
+my $no_cooldown_service = DocExtract::AlgoRecommender::RecommendationService->new(
+    dbh                          => $no_cooldown_dbh,
+    candidate_limit              => 10,
+    recent_attempt_cooldown_days => 0,
+    rating_service               => $rating,
+);
+
+$no_cooldown_service->recommend_for_user(
+    user_id => 7,
+    limit   => 1,
+);
+
+unlike($no_cooldown_dbh->{last_candidate_sql}, qr/last_attempt_at < \?/, 'cooldown can be disabled for experiments');
+is(scalar @{ $no_cooldown_dbh->{last_candidate_bind} }, 2, 'disabled cooldown query binds only user_id and limit');
 
 done_testing;

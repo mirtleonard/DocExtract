@@ -1,0 +1,115 @@
+{
+  "user": {
+    "user_id": 9009,
+    "name": "Fast Improver"
+  },
+  "submissions": [
+    {
+      "id": 22,
+      "problem": "Two Sum",
+      "verdict": "wrong_answer",
+      "score": null,
+      "tests_passed": 5,
+      "tests_total": 10,
+      "hint_used": false,
+      "editorial_used": false,
+      "created_at": "2026-05-01 11:00:00+02"
+    },
+    {
+      "id": 23,
+      "problem": "Two Sum",
+      "verdict": "accepted",
+      "score": null,
+      "tests_passed": null,
+      "tests_total": null,
+      "hint_used": false,
+      "editorial_used": false,
+      "created_at": "2026-05-01 11:13:00+02"
+    },
+    {
+      "id": 24,
+      "problem": "Max Sum Subarray of Size K",
+      "verdict": "accepted",
+      "score": null,
+      "tests_passed": null,
+      "tests_total": null,
+      "hint_used": false,
+      "editorial_used": false,
+      "created_at": "2026-05-01 11:29:00+02"
+    },
+    {
+      "id": 25,
+      "problem": "Longest Substring Without Repeats",
+      "verdict": "accepted",
+      "score": null,
+      "tests_passed": null,
+      "tests_total": null,
+      "hint_used": false,
+      "editorial_used": false,
+      "created_at": "2026-05-01 11:46:00+02"
+    }
+  ],
+  "global_state": {
+    "user_id": 9009,
+    "global_ability": -0.3041,
+    "uncertainty": 1.0,
+    "updated_at": "2026-05-01 11:46:00+02"
+  },
+  "skill_state": [
+    {
+      "skill": "sliding_window",
+      "ability": 0.0891,
+      "uncertainty": 0.9409,
+      "attempts": 2,
+      "solves": 2,
+      "last_practiced_at": "2026-05-01 11:46:00+02"
+    },
+    {
+      "skill": "arrays",
+      "ability": 0.0019,
+      "uncertainty": 0.8468,
+      "attempts": 6,
+      "solves": 3,
+      "last_practiced_at": "2026-05-01 11:13:00+02"
+    },
+    {
+      "skill": "hashing",
+      "ability": -0.069,
+      "uncertainty": 0.8396,
+      "attempts": 6,
+      "solves": 3,
+      "last_practiced_at": "2026-05-01 11:46:00+02"
+    },
+    {
+      "skill": "two_pointers",
+      "ability": -0.18,
+      "uncertainty": 0.94,
+      "attempts": 2,
+      "solves": 0,
+      "last_practiced_at": "2026-05-01 10:55:00+02"
+    }
+  ],
+  "problem_state": [
+    {
+      "problem": "Two Sum",
+      "attempts": 2,
+      "solved": true,
+      "first_solved_at": "2026-05-01 11:13:00+02",
+      "last_attempt_at": "2026-05-01 11:13:00+02"
+    },
+    {
+      "problem": "Max Sum Subarray of Size K",
+      "attempts": 1,
+      "solved": true,
+      "first_solved_at": "2026-05-01 11:29:00+02",
+      "last_attempt_at": "2026-05-01 11:29:00+02"
+    },
+    {
+      "problem": "Longest Substring Without Repeats",
+      "attempts": 1,
+      "solved": true,
+      "first_solved_at": "2026-05-01 11:46:00+02",
+      "last_attempt_at": "2026-05-01 11:46:00+02"
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fast Improver Experiment Summary</title>
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      color: #1f2937;
+      line-height: 1.45;
+      max-width: 860px;
+      margin: 32px auto;
+      padding: 0 24px;
+    }
+
+    h1 {
+      color: #111827;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: #111827;
+      font-size: 20px;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 4px;
+      margin-top: 28px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f3f4f6;
+      font-weight: 700;
+    }
+
+    code {
+      font-family: Menlo, Consolas, monospace;
+      background: #f3f4f6;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    .meta {
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fast Improver Experiment Summary</h1>
+
+  <p class="meta">Source report: <code>docs/algo_recommender_experiment_report.json</code></p>
+  <p>This summary extracts one learner from the experiment report: <code>Fast Improver</code>, user <code>9009</code>.</p>
+
+  <h2>User Overview</h2>
+  <p><code>Fast Improver</code> starts near beginner level, then improves quickly after solving hashing and sliding-window style problems. Their global ability moved from <code>-0.3500</code> to <code>-0.3041</code>, so the system learned that they are stronger than their initial profile suggested.</p>
+
+  <h2>Submission Replay</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Problem</th>
+        <th>Result</th>
+        <th>Predicted</th>
+        <th>Observed</th>
+        <th>Effect</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>Two Sum</code></td>
+        <td>wrong answer</td>
+        <td><code>0.517</code></td>
+        <td><code>0.300</code></td>
+        <td>user underperformed, problem got slightly harder</td>
+      </tr>
+      <tr>
+        <td><code>Two Sum</code></td>
+        <td>accepted</td>
+        <td><code>0.510</code></td>
+        <td><code>0.850</code></td>
+        <td>user improved, problem got easier</td>
+      </tr>
+      <tr>
+        <td><code>Max Sum Subarray of Size K</code></td>
+        <td>accepted</td>
+        <td><code>0.322</code></td>
+        <td><code>1.000</code></td>
+        <td>strong overperformance</td>
+      </tr>
+      <tr>
+        <td><code>Longest Substring Without Repeats</code></td>
+        <td>accepted</td>
+        <td><code>0.275</code></td>
+        <td><code>1.000</code></td>
+        <td>very strong overperformance</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Skill Progress</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Before</th>
+        <th>After</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>arrays</code></td>
+        <td><code>0.0000</code></td>
+        <td><code>0.0019</code></td>
+      </tr>
+      <tr>
+        <td><code>hashing</code></td>
+        <td><code>-0.1000</code></td>
+        <td><code>-0.0690</code></td>
+      </tr>
+      <tr>
+        <td><code>two_pointers</code></td>
+        <td><code>-0.1800</code></td>
+        <td><code>-0.1800</code></td>
+      </tr>
+      <tr>
+        <td><code>sliding_window</code></td>
+        <td>not present</td>
+        <td><code>0.0891</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Problem Progress</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Problem</th>
+        <th>Seed Difficulty</th>
+        <th>Current Difficulty</th>
+        <th>Meaning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>Two Sum</code></td>
+        <td><code>-0.5000</code></td>
+        <td><code>-0.5061</code></td>
+        <td>slightly easier after the final accepted solve</td>
+      </tr>
+      <tr>
+        <td><code>Max Sum Subarray of Size K</code></td>
+        <td><code>0.4000</code></td>
+        <td><code>0.3661</code></td>
+        <td>easier because the user solved it despite low predicted probability</td>
+      </tr>
+      <tr>
+        <td><code>Longest Substring Without Repeats</code></td>
+        <td><code>0.6600</code></td>
+        <td><code>0.6047</code></td>
+        <td>easier overall after experiment users performed well on it</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Important nuance: <code>current_difficulty</code> is the result after the whole experiment run, so for <code>Longest Substring Without Repeats</code> it includes other synthetic users too, not only user <code>9009</code>.</p>
+
+  <h2>Final Recommendations</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Problem</th>
+        <th>Solve Probability</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><code>Palindrome String</code></td>
+        <td><code>0.689</code></td>
+        <td><code>0.856</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><code>Contains Duplicate</code></td>
+        <td><code>0.629</code></td>
+        <td><code>0.790</code></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><code>Reverse an Array</code></td>
+        <td><code>0.805</code></td>
+        <td><code>0.789</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><code>Find Maximum Element</code></td>
+        <td><code>0.823</code></td>
+        <td><code>0.780</code></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><code>FizzBuzz</code></td>
+        <td><code>0.879</code></td>
+        <td><code>0.771</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Interpretation</h2>
+  <p>For this user, the next best recommendation is <code>Palindrome String</code>: it is still approachable, but not too trivial, and it keeps them practicing foundational pattern recognition before moving deeper into harder sliding-window and hash-map problems.</p>
+</body>
+</html>

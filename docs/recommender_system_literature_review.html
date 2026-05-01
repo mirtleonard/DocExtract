@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Recommendation System Literature Review for Algorithmic Problems</title>
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #1d4ed8;
+      --border: #d1d5db;
+      --bg: #f8fafc;
+    }
+
+    @page {
+      margin: 1.8cm 1.6cm;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.45;
+      margin: 0;
+      background: white;
+      font-size: 11pt;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 0.55rem 0;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 22pt;
+      color: #0f172a;
+    }
+
+    h2 {
+      font-size: 15pt;
+      color: #0f172a;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.25rem;
+      margin-top: 1.4rem;
+    }
+
+    h3 {
+      font-size: 12pt;
+      color: var(--accent);
+      margin-top: 1rem;
+    }
+
+    p {
+      margin: 0.35rem 0 0.7rem 0;
+    }
+
+    ul {
+      margin: 0.3rem 0 0.9rem 1.2rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.2rem 0;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 11.5pt;
+    }
+
+    .paper {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      margin: 1rem 0 1.2rem 0;
+    }
+
+    .cite {
+      font-size: 10pt;
+      color: var(--muted);
+    }
+
+    .note {
+      font-size: 10pt;
+      color: var(--muted);
+      border-left: 3px solid var(--border);
+      padding-left: 0.8rem;
+      margin-top: 0.8rem;
+    }
+
+    .decision {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      margin-top: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Recommendation System Literature Review for Algorithmic Problems</h1>
+    <p class="lead">
+      This report explains what each referenced paper or source contributes and why it is useful
+      for building a recommendation system for algorithmic problems. The target system is the one
+      we discussed earlier: a platform that estimates problem difficulty, models user skill by topic
+      and subtopic, and recommends the next problem at an appropriate challenge level.
+    </p>
+
+    <h2>What We Are Trying to Build</h2>
+    <p>
+      We want a system that does three things well. First, it should estimate a user's ability across
+      topics such as arrays, graphs, recursion, dynamic programming, and subskills such as BFS or
+      sliding window. Second, it should estimate the difficulty of each problem, ideally using both
+      expert tags and interaction data from many learners. Third, it should recommend problems that
+      are neither too easy nor too frustrating, while also helping the learner improve in weaker areas.
+    </p>
+    <p>
+      The literature below is useful because each source addresses one or more of these parts:
+      online rating, latent difficulty estimation, mastery tracking over time, programming-specific
+      recommendation, or the statistical weaknesses of naïve rating systems.
+    </p>
+
+    <h2>Paper-by-Paper Review</h2>
+
+    <section class="paper">
+      <h3>1. Pelanek 2016</h3>
+      <p class="cite">
+        Pelanek, R. (2016). Applications of the Elo rating system in adaptive educational systems.
+        Computers &amp; Education, 98, 169-179.
+        DOI: <a href="https://doi.org/10.1016/j.compedu.2016.03.017">10.1016/j.compedu.2016.03.017</a>
+      </p>
+      <p><strong>What the paper does:</strong> This paper explains how the Elo rating system, originally designed for chess, can be adapted for education by treating a student response as a match between a learner and an item. It surveys Elo variants, compares Elo to alternatives such as IRT and other learner models, and illustrates the approach in an adaptive geography practice system.</p>
+      <p><strong>Why it is useful for us:</strong> This is the best practical starting point for an MVP. It supports online updates after every attempt, is simple to implement in a production backend, and directly estimates user ability and problem difficulty without requiring a heavy offline calibration pipeline at the beginning.</p>
+      <p><strong>What we should take from it:</strong> Use Elo-style updates as the online core of the system. In our case, the basic idea becomes a multidimensional version where each problem updates several topic abilities at once. It is especially useful for bootstrapping a live recommender before enough data exists for more advanced models.</p>
+      <p><strong>Main limitation for our use case:</strong> Standard Elo is not a full learning model. It tracks relative performance well, but it does not explicitly represent mastery transitions, forgetting, or concept prerequisites.</p>
+    </section>
+
+    <section class="paper">
+      <h3>2. Vesin et al. 2022</h3>
+      <p class="cite">
+        Vesin, B., Mangaroska, K., Akhuseyinoglu, K., &amp; Giannakos, M. (2022).
+        Adaptive assessment and content recommendation in online programming courses: On the use of Elo-rating.
+        ACM Transactions on Computing Education, 22(3), 1-27.
+        DOI: <a href="https://doi.org/10.1145/3511886">10.1145/3511886</a>
+      </p>
+      <p><strong>What the paper does:</strong> This is the closest paper to our exact problem. It applies a modified Elo-rating approach in an online programming tutoring system to estimate learning content difficulty and student proficiency, then uses those estimates to recommend personalized programming content. The authors evaluate it over a semester and report that the recommendations were relevant and also useful for teacher insight.</p>
+      <p><strong>Why it is useful for us:</strong> It validates that Elo is not only theoretically suitable but operationally useful in programming education. It gives us domain confidence that difficulty estimation and recommendation work differently in programming than in standard quiz systems, because programming exercises require concept transfer and problem-solving rather than isolated fact recall.</p>
+      <p><strong>What we should take from it:</strong> Use an Elo-based student-content matching layer in the recommender and treat recommendation as a pairing problem between learner proficiency and exercise difficulty. This paper strongly supports the architecture we implemented in Perl: online updates plus recommendation from estimated fit.</p>
+      <p><strong>Main limitation for our use case:</strong> The paper is much closer to course content recommendation than to large-scale competitive-problem recommendation. For a richer online judge, we still need better handling of multiple topic tags, repeated submissions, and uncertainty in problem metadata.</p>
+    </section>
+
+    <section class="paper">
+      <h3>3. Bulut et al. 2023</h3>
+      <p class="cite">
+        Bulut, O., Shin, J., Yildirim-Erbasli, S. N., Gorgun, G., &amp; Pardos, Z. A. (2023).
+        An Introduction to Bayesian Knowledge Tracing with pyBKT.
+        Psych, 5(3), 770-786.
+        DOI: <a href="https://doi.org/10.3390/psych5030050">10.3390/psych5030050</a>
+      </p>
+      <p><strong>What the paper does:</strong> This is an accessible introduction to Bayesian Knowledge Tracing, including its parameters, assumptions, and practical implementation. BKT models whether a learner has mastered a skill and updates that mastery probability over time as the learner answers more items.</p>
+      <p><strong>Why it is useful for us:</strong> BKT addresses the main thing Elo does not model well: learning progress over time at the skill level. If we want to know whether a learner is actually improving in recursion or graph traversal, rather than just whether they are stronger than the current item set, BKT gives a clear conceptual framework.</p>
+      <p><strong>What we should take from it:</strong> Use BKT or a BKT-inspired mastery layer per topic or subtopic once we have clean event logs. This is particularly useful for sequencing problems, detecting weak concepts, and answering questions like “is the learner ready for the next DP problem family?”</p>
+      <p><strong>Main limitation for our use case:</strong> Classical BKT assumes explicit knowledge components and often works best when each item maps cleanly to one skill. Algorithmic problems usually involve several skills at once, so we need either careful tagging or a more flexible extension.</p>
+    </section>
+
+    <section class="paper">
+      <h3>4. Yang et al. 2025</h3>
+      <p class="cite">
+        Yang, L., Sun, X., Li, H., Xu, R., et al. (2025).
+        Difficulty aware programming knowledge tracing via large language models.
+        Scientific Reports, 15, 11475.
+        DOI: <a href="https://doi.org/10.1038/s41598-025-96540-3">10.1038/s41598-025-96540-3</a>
+      </p>
+      <p><strong>What the paper does:</strong> This paper extends programming knowledge tracing by making difficulty explicit. It distinguishes between two kinds of difficulty: knowledge-concept difficulty and problem text understanding difficulty. It uses LLM-generated difficulty annotations together with attention and graph-based modeling to improve prediction of student performance.</p>
+      <p><strong>Why it is useful for us:</strong> This is highly relevant because algorithmic problems are difficult for more than one reason. Some are hard because the algorithmic idea is hard, while others are hard because the statement is long, tricky, or loaded with edge cases. Treating all difficulty as one number loses useful signal.</p>
+      <p><strong>What we should take from it:</strong> Split problem difficulty into at least two components in our data model: algorithmic difficulty and statement-comprehension difficulty. Even if we do not use an LLM-heavy model initially, this paper gives a strong conceptual reason to keep those signals separate.</p>
+      <p><strong>Main limitation for our use case:</strong> The full model is more complex than an MVP needs and depends on strong annotation quality. We should borrow the idea of multiple difficulty channels before borrowing the whole architecture.</p>
+    </section>
+
+    <section class="paper">
+      <h3>5. Yera Toledo et al. 2018</h3>
+      <p class="cite">
+        Yera Toledo, R., Caballero Mota, Y., &amp; Martínez, L. (2018).
+        A Recommender System for Programming Online Judges Using Fuzzy Information Modeling.
+        Informatics, 5(2), 17.
+        DOI: <a href="https://doi.org/10.3390/informatics5020017">10.3390/informatics5020017</a>
+      </p>
+      <p><strong>What the paper does:</strong> This paper proposes a recommender system specifically for programming online judges. The core idea is to model uncertainty in user behavior with fuzzy techniques, preprocess noisy data, compute user similarities, and then recommend problems accordingly. The authors report improvements over earlier POJ recommendation approaches, especially for short recommendation lists.</p>
+      <p><strong>Why it is useful for us:</strong> It addresses the exact online judge context, where users can behave inconsistently, solve at different paces, and generate noisy interaction histories. That matters because submissions, retries, and problem selection in a POJ are messier than in a controlled course system.</p>
+      <p><strong>What we should take from it:</strong> Add uncertainty-awareness to the recommendation layer. In practice, this means not overtrusting very sparse user histories, weighting recent data more carefully, and optionally blending content-fit with collaborative signals from similar users once we have enough data.</p>
+      <p><strong>Main limitation for our use case:</strong> Fuzzy collaborative recommendation is useful, but by itself it is not enough for pedagogy. It can tell us what similar users did, but it does not directly model concept mastery or latent problem difficulty as cleanly as Elo or IRT-based approaches.</p>
+    </section>
+
+    <section class="paper">
+      <h3>6. Bolsinova et al. 2025/2026</h3>
+      <p class="cite">
+        Bolsinova, M., Gergely, B., &amp; Brinkhuis, M. J. S. (2026).
+        Keeping Elo alive: Evaluating and improving measurement properties of learning systems based on Elo ratings.
+        British Journal of Mathematical and Statistical Psychology, 79(1), 95-110.
+        DOI: <a href="https://doi.org/10.1111/bmsp.12395">10.1111/bmsp.12395</a>
+      </p>
+      <p><strong>What the paper does:</strong> This paper studies the statistical behavior of Elo in educational settings and shows an important failure mode: when item selection is adaptive and item difficulties are updated together with student abilities, the rating variance can inflate artificially and the ratings may fail to converge. The authors propose a two-parallel-chain solution to reduce this feedback loop.</p>
+      <p><strong>Why it is useful for us:</strong> It tells us where a simple MVP can go wrong. If we use one Elo loop both to estimate ratings and to choose the next problems, then the system can gradually distort its own measurements. That matters a lot in a recommendation platform because recommendations directly change the data we observe next.</p>
+      <p><strong>What we should take from it:</strong> Keep Elo, but use guardrails. The safest practical version for our system is online Elo for short-term updates plus offline recalibration, and eventually some separation between selection logic and rating updates. This paper is the main reason not to treat Elo as a complete end-state solution.</p>
+      <p><strong>Main limitation for our use case:</strong> It is a methodological warning paper rather than a full recommendation blueprint. Its value is in improving system design discipline and protecting us from biased measurements.</p>
+    </section>
+
+    <section class="paper">
+      <h3>7. IRT Overview</h3>
+      <p class="cite">
+        Columbia University Mailman School of Public Health.
+        Item Response Theory overview.
+        Source: <a href="https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory">publichealth.columbia.edu</a>
+      </p>
+      <p><strong>What the source does:</strong> This overview explains the core IRT concepts that matter most to our problem: latent ability, item difficulty, item discrimination, and how the probability of success changes as learner ability increases. It defines difficulty as the ability level where the item has roughly a 50% success probability and discrimination as how sharply the item separates stronger and weaker learners.</p>
+      <p><strong>Why it is useful for us:</strong> IRT gives a rigorous language for the thing we are trying to estimate. It helps us define problem difficulty more precisely than acceptance rate, and it explains why some problems are better than others for measuring skill. Two problems can have the same acceptance rate but very different discrimination value.</p>
+      <p><strong>What we should take from it:</strong> Use IRT concepts to guide the meaning of our rating fields, even if the online system starts with Elo. In particular, difficulty should represent a latent threshold, and eventually we should learn discrimination for problems that are especially informative in distinguishing learners near a given ability band.</p>
+      <p><strong>Main limitation for our use case:</strong> Full IRT calibration is statistically stronger but operationally heavier than Elo. It is usually better as a batch recalibration layer than as the first thing we build online.</p>
+    </section>
+
+    <h2>How the Papers Fit Together</h2>
+    <p>
+      These sources are complementary rather than competing. Pelanek 2016 and Vesin et al. 2022 support the
+      practical online rating core. Bulut 2023 supports adding interpretable skill mastery tracking over time.
+      Yang et al. 2025 motivates separating kinds of difficulty in programming problems. Yera Toledo et al. 2018
+      adds recommendation ideas specific to online judges and highlights uncertainty. Bolsinova et al. 2025/2026
+      is the cautionary paper that tells us how to avoid measuring ourselves into a biased corner. The IRT overview
+      gives the formal measurement language behind difficulty and discrimination.
+    </p>
+
+    <div class="decision">
+      <h3>Recommended Design Direction</h3>
+      <ul>
+        <li>Use a multidimensional Elo-style update online for fast skill and difficulty adaptation.</li>
+        <li>Store multiple weighted skills per problem instead of one flat topic label.</li>
+        <li>Track at least two problem-difficulty components: algorithmic difficulty and statement-comprehension difficulty.</li>
+        <li>Add a mastery layer per skill later using BKT or a similar probabilistic tracing model.</li>
+        <li>Use collaborative or fuzzy recommendation only as a secondary signal, not the core pedagogical signal.</li>
+        <li>Run periodic recalibration so the recommendation loop does not bias the ratings over time.</li>
+      </ul>
+    </div>
+
+    <h2>Bottom Line</h2>
+    <p>
+      If we translate the literature into an implementation strategy, the cleanest path is: start with online Elo,
+      structure the data as if an IRT or knowledge-tracing layer will arrive later, model problem difficulty more
+      carefully than raw acceptance rate, and keep recalibration in the loop so the system stays statistically sane.
+      That gives us something practical, explainable, and well aligned with the programming-education literature.
+    </p>
+
+    <p class="note">
+      Notes on interpretation: some of the “what we should take from it” sections are design inferences drawn from the
+      papers rather than direct claims made by the authors. The source URLs above are the main references used while
+      preparing this report.
+    </p>
+  </main>
+</body>
+</html>
